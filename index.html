@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/cc/52/2f/cc522fd7f2e53e6a45035aa5950b9cbd.png">
+</head>
+<body>
+    <div class="title">
+    <header><p>PIXEL ART!</p></header>
+    </div>
+    <main>
+    <div class="color-card">
+        <div class="pen-canvas">
+            <div id="swatch">
+              <input type="color" id="pen-color" name="color" value="#000000">
+                <div class="info">
+                 <p>Pen Color</p>
+                </div>
+            </div>
+            <div id="swatch">
+                <input type="color" id="canvas-color" name="color" value="#d3d3d3">
+                <div class="info">
+                  <p>Fill Canvas</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" id="color-mode" class="mode color" value="color">
+                Color Mode
+            </button>
+        </div>
+        <div>
+            <button type="button" id="rainbow-mode" class="mode rainbow" value="rainbow">
+                Rainbow Mode
+            </button>
+        </div>
+        <div>
+            <button type="button" id="eraser" class="mode eraser" value="eraser">
+                Eraser
+            </button>
+        </div>
+        <div>
+            <button type="button" id="clear" class="mode clear" value="clear">
+                Clear
+            </button>
+        </div>
+        <div class="slider-box">
+            <div>
+            <input type="range" min="1" max="64" id="rangeInput">
+            </div>
+            <div><p id="rangeValue"></p></div>
+        </div>
+    </div>
+    <div id="grid">
+        
+    </div>
+    </main>
+    <footer class="copyright">
+        <p>
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            anuzka115
+          <a href="https://github.com/anuzka115" target="_blank">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715" height="20px" width="20px">
+        </a>
+        </p>
+    </footer>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
