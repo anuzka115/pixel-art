@@ -18,6 +18,7 @@ body{
     padding-bottom: 20px;
     color: #f7fafa;
     font-family: 'Handjet', cursive;
+    letter-spacing: .5em;
 }
 .title p{
     display: flex;
