@@ -7,6 +7,7 @@ const colorMode = document.getElementById('color-mode');
 const rainbowMode = document.getElementById('rainbow-mode');
 const eraser = document.getElementById('eraser');
 const clearBtn = document.getElementById('clear');
+const toggleBtn = document.getElementById('toggle-grid');
 let n = 16;
 
 function createGrid() {
@@ -62,6 +63,11 @@ function createGrid() {
             const clearColor = 'lightgray';
         cell.style.backgroundColor = clearColor;
           });
+        toggleBtn.addEventListener('click',function(){
+            cell.style.borderColor = 'lightgray';
+          }
+          );
+
 
       }
 
