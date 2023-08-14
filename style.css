@@ -239,6 +239,7 @@ footer{
   }
   
 .grid-cell {
+     border: 0.5px solid white;
     background-color: lightgray;
   }
 .slider-box{
