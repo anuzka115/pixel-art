@@ -68,7 +68,7 @@ function createGrid() {
 
           toggleBtn.addEventListener('click',function(){
             if(cell.style.borderColor == 'white'){
-              cell.style.borderColor = 'lightgray';
+              cell.style.borderColor = canvasColor.value;
             }
             else {
               cell.style.borderColor = 'white';
