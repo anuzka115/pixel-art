@@ -20,7 +20,8 @@ function createGrid() {
       const cell = document.createElement('div');
       cell.classList.add('grid-cell');
       gridContainer.appendChild(cell);
-        cell.style.border = '0.5px solid white;';
+      cell.style.border = '0.5px solid white;';
+    
       colorMode.addEventListener('click',function(){
         cell.addEventListener('mousedown', startDrawing);
         cell.addEventListener('touchstart', startDrawing);
@@ -64,7 +65,8 @@ function createGrid() {
             const clearColor = 'lightgray';
         cell.style.backgroundColor = clearColor;
           });
-        toggleBtn.addEventListener('click',function(){
+
+          toggleBtn.addEventListener('click',function(){
             if(cell.style.borderColor == 'white'){
               cell.style.borderColor = 'lightgray';
             }
@@ -73,7 +75,6 @@ function createGrid() {
             }
           }
           );
-
 
       }
 
