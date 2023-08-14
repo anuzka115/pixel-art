@@ -68,10 +68,10 @@ function createGrid() {
 
           toggleBtn.addEventListener('click',function(){
             if(cell.style.borderColor == 'white'){
-              cell.style.borderColor = canvasColor.value;
+              cell.style.border ='0px';
             }
             else {
-              cell.style.borderColor = 'white';
+              cell.style.border= '0.5px solid white';
             }
           }
           );
